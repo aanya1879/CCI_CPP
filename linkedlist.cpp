@@ -2,8 +2,7 @@
 #include<iostream>
 using namespace std;
 
-
-int main(){
+LinkedList<int> init1(){
     LinkedList<int> ll;
     ll.push(10);
     ll.push(20);
@@ -11,7 +10,21 @@ int main(){
     ll.push(40);
     ll.push(30);
     ll.push(10);
-    ll.print();
+
+    return ll;
+}
+
+LinkedList<int> init2(){
+    LinkedList<int> ll;
+    ll.push(10);
+    ll.print(); 
+
+    return ll;
+}
+
+int main(){
+    LinkedList<int> ll = init1();
+    ll.print(); 
     
     return 0;
 }

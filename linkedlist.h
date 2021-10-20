@@ -39,6 +39,15 @@ template <typename T> class LinkedList{
             cout<<endl;
         }
 
+        void print(Node<T>* head){
+            Node<T>* p = head;
+            while(p!= NULL){
+                cout<<p->data<<"->";
+                p=p->next;
+            }
+            cout<<endl;
+        }
+
         Node<T>* get(){
             return head;
         }
