@@ -36,6 +36,7 @@ template <typename T> class LinkedList{
                 cout<<p->data<<"->";
                 p=p->next;
             }
+            cout<<"NULL";
             cout<<endl;
         }
 
@@ -45,11 +46,23 @@ template <typename T> class LinkedList{
                 cout<<p->data<<"->";
                 p=p->next;
             }
+            cout<<"NULL";
             cout<<endl;
         }
 
         Node<T>* get(){
             return head;
+        }
+
+        int len(){
+            int count = 0;
+            Node<T>* p = head;
+            while(p!= NULL){
+                count++;
+                p=p->next;
+            }
+            return count;
+
         }
 
 
