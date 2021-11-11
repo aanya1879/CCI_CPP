@@ -53,6 +53,17 @@ template <typename T> class LinkedList{
         Node<T>* get(){
             return head;
         }
+        Node<T>* last(){
+
+            Node<T>* p = head;
+            if(p!=NULL){
+                while(p->next!= NULL){
+                    p=p->next;
+                }
+            }
+            
+            return p;
+        }
 
         int len(){
             int count = 0;
