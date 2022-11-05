@@ -1,0 +1,18 @@
+
+def func(str):
+    wS=wE=0
+    maxlen = 0
+    dic = {}
+
+    for wE in range(len(str)):
+        # if not in hashmap
+        #   add to hashmap <alphabet, pos(wE)>
+        # else 
+        #   move wS to prev instance and update w/ new pos. 
+        print("something")
+        
+    return maxlen
+
+
+print("start")
+print(str(func("aabccbb"))) #3
