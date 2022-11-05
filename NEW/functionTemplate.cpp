@@ -13,4 +13,5 @@ int main(int argc, char* argv[]) {
   int result;
   result = f(vector<int>{});
   cout << "Max length: " << result << endl;
+  cout<<"test";
 }
